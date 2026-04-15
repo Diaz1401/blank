@@ -1,0 +1,10 @@
+container:
+  image: diazaji/ubuntu:kernel
+  cpu: 8
+  memory: 16G
+task:
+  name: Check
+  script:
+    - lscpu
+    - free -h
+    - df -h
